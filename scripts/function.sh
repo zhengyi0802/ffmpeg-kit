@@ -64,7 +64,7 @@ get_library_name() {
   13) echo "opencore-amr" ;;
   14) echo "shine" ;;
   15) echo "speex" ;;
-  16) echo "dav1d" ;;
+#  16) echo "dav1d" ;;
   17) echo "kvazaar" ;;
   18) echo "x264" ;;
   19) echo "xvidcore" ;;
@@ -194,7 +194,7 @@ from_library_name() {
   opencore-amr) echo 13 ;;
   shine) echo 14 ;;
   speex) echo 15 ;;
-  dav1d) echo 16 ;;
+#  dav1d) echo 16 ;;
   kvazaar) echo 17 ;;
   x264) echo 18 ;;
   xvidcore) echo 19 ;;
@@ -600,7 +600,7 @@ display_help_licensing() {
 
 display_help_common_libraries() {
   echo -e "  --enable-chromaprint\t\tbuild with chromaprint [no]"
-  echo -e "  --enable-dav1d\t\tbuild with dav1d [no]"
+#  echo -e "  --enable-dav1d\t\tbuild with dav1d [no]"
   echo -e "  --enable-fontconfig\t\tbuild with fontconfig [no]"
   echo -e "  --enable-freetype\t\tbuild with freetype [no]"
   echo -e "  --enable-fribidi\t\tbuild with fribidi [no]"
@@ -798,9 +798,9 @@ set_library() {
     # CPU-FEATURES IS ALWAYS ENABLED
     ENABLED_LIBRARIES[LIBRARY_CPU_FEATURES]=1
     ;;
-  dav1d)
-    ENABLED_LIBRARIES[LIBRARY_DAV1D]=$2
-    ;;
+#  dav1d)
+#    ENABLED_LIBRARIES[LIBRARY_DAV1D]=$2
+#    ;;
   fontconfig)
     ENABLED_LIBRARIES[LIBRARY_FONTCONFIG]=$2
     ENABLED_LIBRARIES[LIBRARY_EXPAT]=$2
